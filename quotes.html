@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhiourcast!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script/script.js" defer></script>
+</head>
+<body class="h-max mt-10 mb-10 bg-gradient-to-b from-[#190060] to-[#1A0014]">
+    <div class="text-white flex flex-col items-center justify-center w-full">
+        <img src="./assets/DMV.png" class="w-[154px]" alt="logo dmv">
+        <a href="/" class="text-[36px] font-bold uppercase"> Bhiourcast</a>
+        <h5 class="font-semibold text-[14px]">!- Rahasiamu 101% Aman -!</h5>
+    </div>
+
+    <div class="h-max w-full flex flex-col justify-center items-center space-y-6 mt-16 ">
+       
+        <div class="flex flex-col rounded-lg p-[25px] bg-white bg-opacity-10 backdrop-blur-md w-[335px] h-max border border-white border-opacity-10">
+            <div class="flex items-center space-x-3 justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M14.5 1H10.5C9.67188 1 9 1.67188 9 2.5V6.5C9 7.32812 9.67188 8 10.5 8H13V10C13 11.1031 12.1031 12 11 12H10.75C10.3344 12 10 12.3344 10 12.75V14.25C10 14.6656 10.3344 15 10.75 15H11C13.7625 15 16 12.7625 16 10V2.5C16 1.67188 15.3281 1 14.5 1ZM5.5 1H1.5C0.671875 1 0 1.67188 0 2.5V6.5C0 7.32812 0.671875 8 1.5 8H4V10C4 11.1031 3.10312 12 2 12H1.75C1.33437 12 1 12.3344 1 12.75V14.25C1 14.6656 1.33437 15 1.75 15H2C4.7625 15 7 12.7625 7 10V2.5C7 1.67188 6.32812 1 5.5 1Z" fill="white"/>
+                  </svg>
+                <h1 class="text-[24px] text-white font-semibold ">Quotes</h1>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M14.5 1H10.5C9.67188 1 9 1.67188 9 2.5V6.5C9 7.32812 9.67188 8 10.5 8H13V10C13 11.1031 12.1031 12 11 12H10.75C10.3344 12 10 12.3344 10 12.75V14.25C10 14.6656 10.3344 15 10.75 15H11C13.7625 15 16 12.7625 16 10V2.5C16 1.67188 15.3281 1 14.5 1ZM5.5 1H1.5C0.671875 1 0 1.67188 0 2.5V6.5C0 7.32812 0.671875 8 1.5 8H4V10C4 11.1031 3.10312 12 2 12H1.75C1.33437 12 1 12.3344 1 12.75V14.25C1 14.6656 1.33437 15 1.75 15H2C4.7625 15 7 12.7625 7 10V2.5C7 1.67188 6.32812 1 5.5 1Z" fill="white"/>
+                  </svg>
+            </div>
+
+            <form action="script/post.php" onsubmit="return postData(this)" class="w-full">
+                <input type="hidden" name="type" value="quotes">
+                <input name="from" class="w-full mt-3 mb-5 py-2 text-[14px] font-thin tracking-widest px-4 text-pink-200 bg-white bg-opacity-5 backdrop-blur-sm rounded-xl " placeholder="From" required></input>
+                <label for="message" class="mb-2 ml-2 text-white tracking-wide font-thin text-sm text-pink-300">Messages:</label>
+                <textarea id="message" name="message" required class="w-full mt-2 py-2 text-[14px] font-thin tracking-wide px-4 text-pink-200 bg-white bg-opacity-5 backdrop-blur-sm rounded-xl " 
+                placeholder="Rules :
+                
+1. Nama pengirim boleh disamarkan
+
+2. Tidak boleh mengandung unsur sara, pornografi, dan ujaran kebencian." rows="10" cols="100"></textarea>
+    
+    
+<input type="submit" class="w-full text-center mt-10 py-2 text-[14px] font-bold text-[#0A0060] bg-white rounded-xl hover:bg-gradient-to-b from-pink-200 hover:scale-105 to-white duration-200 ease-linear" value="Send !"></input>
+    
+</form>
+        </div>
+
+        <div class="flex flex-col text-sm tracking-widest w-full items-center justify-center text-white pt-3">
+            <h5>Made with ❤️ by  <a href="https://www.instagram.com/dmv_smkn4kotabogor/"> DMV !</a> </h5>
+
+            <h5 class="mt-5 text-gray-300 text-[12px]"> UI by Bumi</h5>
+            <h5 class="text-gray-300 text-[12px]"> Backend by Rusans</h5>
+        </div>
+    </div>
+
+</body>
+</html>
